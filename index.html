@@ -1,11 +1,114 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerleva</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cerleva</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+
+        <link rel="stylesheet" href="./dist/main.css">
+    </head>
+    <body class="relative">
+        <header class="container absolute top-0 flex items-center justify-between mx-auto mt-12 -translate-x-1/2 container-3xl left-1/2">
+                <p class="flex flex-col gap-1">
+                    <span class="text-xl text-white font-extralight">para você</span>
+                    <span class="text-base text-white font-extralight">sob medida</span>
+                </p>
+
+                <img src="src/media/img/logo-cerleva.svg" alt="">
+
+                <button>
+                    <svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="39" y1="16.5" x2="-4.37114e-08" y2="16.5" stroke="white"/>
+                        <line x1="39" y1="8.5" x2="9" y2="8.5" stroke="white"/>
+                        <line x1="39" y1="0.5" x2="-4.37114e-08" y2="0.499997" stroke="white"/>
+                    </svg>
+                </button>
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="h-full overflow-hidden max-h-dvh">
+                <video class="w-full h-full" autoplay>
+                    <source src="./src/media/video/hero.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                </video>
+            </section>
+
+            <!-- Conheça a Serleva -->
+            <section class="flex items-center justify-between mt-10">
+                <div class="max-w-[532px]">
+                    <h3 class="uppercase text-[22px]">Conheça a Cerleva</h3>
+                    <p class="text-lg font-light">Contamos com grandes parceiros que somam mais de 55 anos de experiência no mercado. Buscamos diariamente, oferecer ao nosso cliente e parceiro os melhores produtos pelo menor custo-benefício.</p>
+                    <p class="text-lg font-light">Além disso, contamos com uma loja bem estruturada, show room à disposição e profissionais capacitados para agregar valor à sua obra! Nossa equipe multidisciplinar é composta desde de design interiores à engenheiros, ou seja, temos o especialista certo para CADA ETAPA do seu projeto</p>
+
+                    <a href="#" class="block px-20 py-3 mt-5 border w-fit border-cblack">Saiba Mais</a>
+                </div>
+
+                <div class="max-h-[368px] overflow-hidden">
+                    <img src="./src/media/img/section-two.svg" alt="" class="h-full">
+                </div>
+            </section>
+
+            <!-- Carrosel -->
+            <section class="container mx-auto mt-16 container-3xl">
+                <div class="swiper">
+                    <div class="swiper-wrapper max-h-[608px] max-w-full">
+                      <div class="swiper-slide">
+                        <img src="src/media/img/carrosel-1.svg" alt="" class="">
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="src/media/img/carrosel-1.svg" alt="" class="">
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="src/media/img/carrosel-1.svg" alt="" class="">
+                      </div>
+
+                      <div class="swiper-slide">
+                        <img src="src/media/img/carrosel-1.svg" alt="" class="">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="flex mt-10">
+                    <h3 class="uppercase text-[22px] font-light">Uma cozinha com elegância, conforto e modernidade de primeira linha.</h3>
+                    
+                    <p>
+                        Fabricados com equipamentos de última geração, matérias-primas de excepcional qualidade e pelas mãos de profissionais altamente qualificados, os móveis sob medida da Cerleva apresentam design de padrão internacional e excelente acabamento.
+                    </p>
+
+                    <p>
+                        Desenvolvido com foco em inovação, o design do escritório da Cerleva combina estética contemporânea com funcionalidade, fruto de um trabalho meticuloso de designers e criadores altamente qualificados.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projetos -->
+             <section class="container mx-auto mt-16 container-3xl">
+                <h4>Projetos</h4>
+
+
+             </section>
+        </main>
+
+        <footer>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="src/js/index.js"></script>
+    </body>
+    </html>
