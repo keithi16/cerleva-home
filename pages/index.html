@@ -18,12 +18,12 @@
     </head>
     <body class="relative">
         <header class="absolute top-0 z-50 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
-                <p class="flex flex-col gap-1">
+                <p class="flex-col hidden gap-1 md:flex">
                     <span class="text-xl text-white font-extralight">para você</span>
                     <span class="text-base text-white font-extralight">sob medida</span>
                 </p>
 
-                <img src="../src/media/img/logo-cerleva.svg" alt="" class="w-fit h-fit">
+                <img src="../src/media/img/logo-cerleva.svg" alt="" class="w-fit max-md:hidden">
 
                 <button>
                     <svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,10 +43,10 @@
                         Seu navegador não suporta vídeos HTML5.
                     </video>
     
-                    <div class="absolute bottom-[calc(10%+190px)] left-1/2 -translate-x-1/2 bg-white px-1 py-1 flex font-light items-center">
-                            <span class="px-6">Explore nosso portfolio Cerleva</span>
+                    <div class="absolute bottom-[calc(8%+88px)] lg:bottom-[calc(10%+190px)] left-1/2 -translate-x-1/2 lg:bg-white lg:p-1 flex font-light items-center">
+                            <span class="px-6 max-lg:hidden">Explore nosso portfolio Cerleva</span>
     
-                            <a href="https://www.ornare.com.br/produtos/"  target="_blank" class="bg-cblack py-[14px] px-9 flex items-center gap-2 text-white">
+                            <a href="https://www.ornare.com.br/produtos/"  target="_blank" class="bg-cblack py-[14px] px-9 flex items-center gap-2 text-white whitespace-nowrap">
                                 <span>Veja todos os produtos</span>
     
                                 <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="min-w-2 min-h-1">
@@ -74,7 +74,7 @@
             </section>
 
             <!-- Conheça a Serleva -->
-            <section class="flex items-center justify-between gap-6 mt-32 lg:gap-20 max-lg:flex-col-reverse xl:gap-40">
+            <section class="flex items-center justify-between gap-6 mt-16 lg:mt-32 lg:gap-20 max-lg:flex-col-reverse xl:gap-40">
                 <div class="lg:max-w-[532px] lg:ps-10 max-lg:px-5 text-cblack font-light">
                         <div class="flex items-center gap-2 mb-6">
                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,8 +99,8 @@
             </section>
 
             <!-- Carrosel -->
-            <section class="mt-40 container-3xl">
-                <div class="swiper">
+            <section class="mt-20 lg:mt-40 container-3xl">
+                <div class="swiper max-h-[608px]">
                     <div class="max-w-full swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="../src/media/img/carrosel-1.svg" alt="" class="max-h-[608px]">
@@ -210,7 +210,7 @@
             </section>
 
             <!-- Projetos -->
-             <section class="mt-32"> 
+             <section class="mt-20 lg:mt-32"> 
                 <div class="container-3xl">
 
                     <!-- Titulo -->
@@ -291,20 +291,20 @@
 
                     <!-- Texto de Cima do Video -->
                     <div class="bg-white absolute top-0 left-0 w-[74.74%] pt-16">
-                        <p class="mb-2 text-xl text-right me-4 font-extralight ">Ser uma empresa de referencia no seguimento ao mesmo tempo com proposito de ajudar a sociedade.</p>
+                        <p class="mb-2 text-xl text-right me-4 font-extralight max-lg:hidden">Ser uma empresa de referencia no seguimento ao mesmo tempo com proposito de ajudar a sociedade.</p>
                     </div>
 
                     <div class="absolute flex flex-col justify-between w-full  px-10 top-[100px] py-11 h-[calc(100%-100px)]">
 
                     <!-- 55 anos + Seta da Esquerda -->
                         <div class="flex items-center justify-between">
-                            <div class="flex items-center justify-end -mt-32 bg-white size-24 -ms-10 pe-3">
+                            <div class="flex items-center justify-end -mt-32 bg-white size-24 -ms-10 pe-3 max-lg:hidden">
                                 <svg width="8" height="65" viewBox="0 0 8 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M3.64645 64.3536C3.84171 64.5488 4.15829 64.5488 4.35356 64.3536L7.53554 61.1716C7.7308 60.9763 7.7308 60.6597 7.53554 60.4645C7.34027 60.2692 7.02369 60.2692 6.82843 60.4645L4 63.2929L1.17158 60.4645C0.976313 60.2692 0.659731 60.2692 0.464469 60.4645C0.269207 60.6597 0.269207 60.9763 0.464469 61.1716L3.64645 64.3536ZM3.5 2.18557e-08L3.5 64L4.5 64L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#231F20"/>
                                 </svg>
                             </div>
     
-                            <div class="flex flex-col text-white">
+                            <div class="flex flex-col text-white max-lg:ml-auto">
                                 <p class="font-semibold text-8xl">55</p>
                                 <span class="text-xl font-extralight">Anos de Cerleva</span>
                             </div>
@@ -326,7 +326,7 @@
              </section>
 
              <!-- Últimas Notícias -->
-              <section class="mt-20 container-3xl">
+              <section class="mt-12 lg:mt-20 container-3xl">
                 <h4 class="text-center uppercase text-cblack ">Últimas Notícias</h4>
 
                 <div class="grid grid-cols-3 grid-rows-2 mt-8 gap-x-5 gap-y-8">
@@ -439,10 +439,10 @@
               </section>
         </main>
 
-        <footer class="mt-40 container-3xl">
-           <div class="flex justify-between">
-                <div class="flex flex-col justify-between gap-20 pt-32">                
-                    <div class="flex gap-36">
+        <footer class="mt-16 lg:mt-40 container-3xl">
+           <div class="lg:flex lg:justify-between">
+                <div class="flex flex-col justify-between gap-10 lg:pt-32 lg:gap-20">                
+                    <div class="flex gap-10 max-lg:flex-col lg:gap-36">
                         <div>
                             <h5 class="text-lg text-black">Venha nos Visitar</h5>
                             <p>Av. Arnaldo Rodrigues Bitencourt, <br>
@@ -456,8 +456,18 @@
                         </div>
                     </div>
 
+                    <div class="flex items-center justify-end gap-5 lg:hidden">
+                        <a href="#">
+                            <img src="../src/media/img/instagram-icon.svg" alt="" class="w-fit">
+                        </a>
+                        
+                        <a href="#">
+                            <img src="../src/media/img/facebook-icon.svg" alt="" class="w-fit">
+                        </a>
+                    </div>
+
                     <div>
-                        <img src="../src/media/img/footer-logo.svg" alt="" class="w-fit">
+                        <img src="../src/media/img/footer-logo.svg" alt="" class="w-fit max-lg:mx-auto">
                     </div>
                 </div>
 
@@ -502,10 +512,10 @@
             </div>
            </div>
 
-            <hr class="mt-10">
+            <hr class="mt-10 max-lg:hidden">
 
            <div class="py-7">
-            <p class="font-light uppercase text-cblack">CERLEVA REVESTIMENTO E PLANEJAMENTO –  TODOS OS DIREITOS RESERVADOS –  <a href="#" class="underline">POLITÍCA DE PRIVACIDADE</a>. BY <a href="#" class="underline">DIGITALCARE</a></p>
+            <p class="font-light uppercase text-cblack max-lg:hidden">CERLEVA REVESTIMENTO E PLANEJAMENTO –  TODOS OS DIREITOS RESERVADOS –  <a href="#" class="underline">POLITÍCA DE PRIVACIDADE</a>. BY <a href="#" class="underline">DIGITALCARE</a></p>
            </div>
         </footer>
 

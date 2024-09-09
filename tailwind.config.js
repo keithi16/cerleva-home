@@ -28,8 +28,9 @@ module.exports = {
     // plugins: [],
 
     content: [
-      "./src/**/*.{js,css}", // Corrigido para 'js' em vez de 'zjs'
-      "./pages/*.html"
+      "./src/**/*.{js,css}",
+      "./pages/index.html",
+      "./pages/**/*.html"
       // './*.php',
       // './template-parts/**/*.php',
       // './inc/*.php',
@@ -41,9 +42,6 @@ module.exports = {
       },
       colors: {
           'cblack': '#231F20',
-        },
-        container: {
-          center: true,
       },
     },
   },
