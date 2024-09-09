@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="./dist/main.css">
     </head>
     <body class="relative">
-        <header class="container absolute top-0 flex items-center justify-between mx-auto mt-12 -translate-x-1/2 container-3xl left-1/2">
+        <header class="container absolute top-0 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
                 <p class="flex flex-col gap-1">
                     <span class="text-xl text-white font-extralight">para você</span>
                     <span class="text-base text-white font-extralight">sob medida</span>
@@ -34,7 +34,7 @@
                 </button>
         </header>
 
-        <main>
+        <main> 
             <!-- Hero -->
             <section class="h-full overflow-hidden max-h-dvh">
                 <video class="w-full h-full" autoplay>
@@ -44,22 +44,32 @@
             </section>
 
             <!-- Conheça a Serleva -->
-            <section class="flex items-center justify-between mt-10">
-                <div class="max-w-[532px]">
-                    <h3 class="uppercase text-[22px]">Conheça a Cerleva</h3>
-                    <p class="text-lg font-light">Contamos com grandes parceiros que somam mais de 55 anos de experiência no mercado. Buscamos diariamente, oferecer ao nosso cliente e parceiro os melhores produtos pelo menor custo-benefício.</p>
-                    <p class="text-lg font-light">Além disso, contamos com uma loja bem estruturada, show room à disposição e profissionais capacitados para agregar valor à sua obra! Nossa equipe multidisciplinar é composta desde de design interiores à engenheiros, ou seja, temos o especialista certo para CADA ETAPA do seu projeto</p>
+            <section class="flex items-center justify-between gap-40 mt-24">
+                <div class="max-w-[532px] ps-10 text-cblack font-light">
+                        <div class="flex items-center gap-2 mb-6">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="11" height="11" stroke="#3A3A3A"/>
+                            </svg>
+                            
+                            <h3 class="uppercase text-[22px]">Conheça a Cerleva</h3>
+                        </div>
 
-                    <a href="#" class="block px-20 py-3 mt-5 border w-fit border-cblack">Saiba Mais</a>
+                        <p class="text-lg">Contamos com grandes parceiros que somam mais de 55 anos de experiência no mercado. Buscamos diariamente, oferecer ao nosso cliente e parceiro os melhores produtos pelo menor custo-benefício.</p>
+                        
+                        <p class="mt-5 text-lg">Além disso, contamos com uma loja bem estruturada, show room à disposição e profissionais capacitados para agregar valor à sua obra! Nossa equipe multidisciplinar é composta desde de design interiores à engenheiros, ou seja, temos o especialista certo para CADA ETAPA do seu projeto</p>
+
+                        <a href="#" class="block px-20 py-3 mt-5 border w-fit border-cblack">Saiba Mais</a>
                 </div>
 
-                <div class="max-h-[368px] overflow-hidden">
-                    <img src="./src/media/img/section-two.svg" alt="" class="h-full">
+                <div class="max-h-[368px] w-full overflow-hidden relative">
+                    <img src="./src/media/img/section-two.svg" alt="" class="object-cover w-full h-full">
+
+                    <div class="absolute bottom-0 left-0 bg-white size-12"></div>
                 </div>
             </section>
 
             <!-- Carrosel -->
-            <section class="container mx-auto mt-16 container-3xl">
+            <section class="container mt-40 container-3xl">
                 <div class="swiper">
                     <div class="swiper-wrapper max-h-[608px] max-w-full">
                       <div class="swiper-slide">
@@ -84,67 +94,137 @@
                     <div class="swiper-button-next"></div>
                 </div>
 
-                <div class="flex mt-10">
-                    <h3 class="uppercase text-[22px] font-light">Uma cozinha com elegância, conforto e modernidade de primeira linha.</h3>
+                <div class="flex justify-between mt-10 text-cblack">
+                    <h3 class="uppercase text-[22px] font-light max-w-[201px]">Uma cozinha com elegância, conforto e modernidade de primeira linha.</h3>
                     
-                    <p>
-                        Fabricados com equipamentos de última geração, matérias-primas de excepcional qualidade e pelas mãos de profissionais altamente qualificados, os móveis sob medida da Cerleva apresentam design de padrão internacional e excelente acabamento.
-                    </p>
-
-                    <p>
-                        Desenvolvido com foco em inovação, o design do escritório da Cerleva combina estética contemporânea com funcionalidade, fruto de um trabalho meticuloso de designers e criadores altamente qualificados.
-                    </p>
+                    <div class="flex gap-[154px] !leading-[0.5]">
+                        <p class="max-w-[340px] font-light ">
+                            Fabricados com <span class="font-normal">equipamentos de última geração</span>, matérias-primas de excepcional qualidade e pelas mãos de profissionais altamente qualificados, os <span class="font-normal">
+                                móveis sob medida
+                            </span> da Cerleva apresentam design de padrão internacional e excelente acabamento.
+                        </p>
+    
+                        <p class="max-w-[340px] font-light ">
+                            Desenvolvido com foco em inovação, o design do escritório da <span class="font-normal">Cerleva combina estética contemporânea com funcionalidade</span>, fruto de um trabalho meticuloso de <span class="font-normal">
+                                designers e criadores altamente qualificados
+                            </span>.
+                        </p>
+                    </div>
                 </div>
             </section>
 
             <!-- Projetos -->
-             <section class="container mx-auto mt-16 container-3xl">
-                <h4 class="text-center">Projetos</h4>
+             <section class="mt-32"> 
+                <div class="container container-3xl">
+                    <div class="flex items-center justify-center gap-1">
+                        <h4 class="font-light text-center uppercase">Projetos</h4>
 
-                <div class="grid grid-cols-4">
-                    <div>
-                        <span>
-                             
-                        </span>
-
-                        <div>
-                            
-                        </div>
+                        <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.5 7L9 9.53674e-07L-3.41715e-07 1.66869e-07L4.5 7Z" fill="#231F20"/>
+                        </svg>                        
                     </div>
 
-                    <div>
-                        <span></span>
+                    <div class="grid grid-cols-4 gap-3 h-full max-h-[484px] mt-6">
+                        <div class="relative h-full max-h-[484px]">
+                            <div class="flex items-end gap-2">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" stroke="#231F20"/>
+                                    <circle cx="24" cy="24" r="7.5" stroke="#231F20"/>
+                                </svg>    
+                                
+                                <span class="text-[22px] block font-light text-cblack uppercase">Sala de Estar</span>
+                            </div>
 
-                        <div>
-                            
+                            <img src="src/media/img/project1.svg" alt="" class="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 ease-linear opacity-0 hover:opacity-100">
+                        </div>
+
+                        <div class="relative h-full max-h-[484px]">
+                            <div class="flex gap-2 mt-[66.66%] items-end">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#231F20"/>
+                                    <path d="M15.3397 30L24 15L32.6603 30H15.3397Z" stroke="#231F20"/>
+                                </svg>
+                                
+                                <span class="text-[22px] block font-light text-cblack uppercase">Cozinha</span>
+                            </div>
+                                
+
+                            <img src="src/media/img/project2.svg" alt="" class="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 ease-linear opacity-0 hover:opacity-100">
+                        </div>
+
+                        <div class="relative h-full max-h-[484px]">
+                            <div class="flex gap-2 mt-[96%] items-end">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#231F20"/>
+                                    <path d="M15.3397 30L24 15L32.6603 30H15.3397Z" stroke="#231F20"/>
+                                </svg>
+                                
+                                <span class="text-[22px] block font-light text-cblack uppercase">Produto 3</span>
+                            </div>
+
+                            <img src="src/media/img/project3.svg" alt="" class="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 ease-linear opacity-0 hover:opacity-100">
+                        </div>
+
+                        <div class="relative h-full max-h-[484px]">
+                            <div class="flex gap-2 mt-[33.33%] items-end">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#231F20"/>
+                                    <path d="M15.3397 30L24 15L32.6603 30H15.3397Z" stroke="#231F20"/>
+                                </svg>
+                                
+                                <span class="text-[22px] block font-light text-cblack uppercase">Produto 4</span>
+                            </div>
+
+                            <img src="src/media/img/project4.svg" alt="" class="absolute inset-0 object-cover w-full h-full transition-opacity duration-300 ease-linear opacity-0 hover:opacity-100">
                         </div>
                     </div>
+                </div>
 
-                    <div>
-                        <span></span>
+                <div class="relative h-full overflow-hidden max-h-dvh">
+                    <video class="w-full h-full" autoplay>
+                        <source src="./src/media/video/project.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
 
-                        <div>
-                            
-                        </div>
+                    <div class="bg-white absolute top-0 left-0 w-[74.74%] pt-16">
+                        <p class="mb-2 text-xl text-right me-4 font-extralight ">Ser uma empresa de referencia no seguimento ao mesmo tempo com proposito de ajudar a sociedade.</p>
                     </div>
 
-                    <div>
-                        <span></span>
+                    <div class="absolute flex flex-col justify-between w-full  px-10 top-[100px] py-11 h-[calc(100%-100px)]">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-end -mt-32 bg-white size-24 -ms-10 pe-3">
+                                <svg width="8" height="65" viewBox="0 0 8 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.64645 64.3536C3.84171 64.5488 4.15829 64.5488 4.35356 64.3536L7.53554 61.1716C7.7308 60.9763 7.7308 60.6597 7.53554 60.4645C7.34027 60.2692 7.02369 60.2692 6.82843 60.4645L4 63.2929L1.17158 60.4645C0.976313 60.2692 0.659731 60.2692 0.464469 60.4645C0.269207 60.6597 0.269207 60.9763 0.464469 61.1716L3.64645 64.3536ZM3.5 2.18557e-08L3.5 64L4.5 64L4.5 -2.18557e-08L3.5 2.18557e-08Z" fill="#231F20"/>
+                                </svg>
+                            </div>
+    
+                            <div class="flex flex-col text-white">
+                                <p class="font-semibold text-8xl">55</p>
+                                <span class="text-xl font-extralight">Anos de Cerleva</span>
+                            </div>
+                        </div>
 
-                        <div>
-                            
+                        <div class="flex justify-between"> 
+                            <span>
+                                <img src="./src/media/img/qrcode.svg" alt="">
+                            </span>
+
+                            <div class="flex flex-col text-white">
+                                <span class="block text-xl font-extralight ms-auto">Um novo olhar sobre a arquitetura.</span>
+                                <p class="font-semibold text-8xl">+140 projetos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
              </section>
 
              <!-- Últimas Notícias -->
-              <section class="container mx-auto mt-16 container-3xl">
-                <h4 class="text-center uppercase">Últimas Notícias</h4>
+              <section class="container mt-20 container-3xl">
+                <h4 class="text-center uppercase text-cblack ">Últimas Notícias</h4>
 
                 <div class="grid grid-cols-3 grid-rows-2 mt-8 gap-x-5 gap-y-8">
                     <div class="relative">
-                        <img src="src/media/img/imovel.svg" alt="">
+                        <img src="src/media/img/imovel.svg" alt="" class="object-cover w-full h-full">
 
                         <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
                             <div class="flex justify-between">
@@ -154,6 +234,42 @@
                             </div>
 
                             <div class="h-full border-white border-s"></div>
+
+                            <p class="font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="src/media/img/imovel2.svg" alt="" class="object-cover w-full h-full" class="object-cover w-full h-full">
+
+                        <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
+                            <div class="flex justify-between">
+                                <p class="text-xl font-light ">Materiais Refinados</p>
+
+                                <a href="#" class="font-light">saiba mais</a>
+                            </div>
+
+                            <div class="h-full border-white border-s">
+
+                            </div>
+
+                            <p class="font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img src="src/media/img/imovel3.svg" alt="" class="object-cover w-full h-full">
+
+                        <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
+                            <div class="flex justify-between">
+                                <p class="text-xl font-light">Materiais Refinados</p>
+
+                                <a href="#" class="font-light">saiba mais</a>
+                            </div>
+
+                            <div class="h-full border-white border-s">
+
+                            </div>
 
                             <p class="font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                         </div>
@@ -178,25 +294,7 @@
                     </div>
 
                     <div class="relative">
-                        <img src="src/media/img/imovel3.svg" alt="">
-
-                        <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
-                            <div class="flex justify-between">
-                                <p class="text-xl font-light">Materiais Refinados</p>
-
-                                <a href="#" class="font-light">saiba mais</a>
-                            </div>
-
-                            <div class="h-full border-white border-s">
-
-                            </div>
-
-                            <p class="font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative">
-                        <img src="src/media/img/imovel2.svg" alt="">
+                        <img src="src/media/img/imovel3.svg" alt="" class="object-cover w-full h-full">
 
                         <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
                             <div class="flex justify-between">
@@ -214,25 +312,7 @@
                     </div>
 
                     <div class="relative">
-                        <img src="src/media/img/imovel3.svg" alt="">
-
-                        <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
-                            <div class="flex justify-between">
-                                <p class="text-xl font-light ">Materiais Refinados</p>
-
-                                <a href="#" class="font-light">saiba mais</a>
-                            </div>
-
-                            <div class="h-full border-white border-s">
-
-                            </div>
-
-                            <p class="font-light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        </div>
-                    </div>
-
-                    <div class="relative">
-                        <img src="src/media/img/imovel.svg" alt="">
+                        <img src="src/media/img/imovel.svg" alt="" class="object-cover w-full h-full">
 
                         <div class="absolute inset-0 flex flex-col p-6 bg-[#3A3A3A] h-full justify-between text-white opacity-0 hover:opacity-100 transition-opacity duration-300 ease-linear gap-3">
                             <div class="flex justify-between">
@@ -250,11 +330,9 @@
                     </div>
                 </div>
               </section>
-
-
         </main>
 
-        <footer class="container mx-auto mt-16 container-3xl">
+        <footer class="container mt-16 container-3xl">
            <div class="flex">
                 <div>
 
