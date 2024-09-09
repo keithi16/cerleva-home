@@ -42,14 +42,8 @@ module.exports = {
       colors: {
           'cblack': '#231F20',
         },
-      container: {
-          center: true, // Centraliza o container
-          screens: {
-              '3xl': '100%', // Corrigido para '100%' em vez de 'w-full'
-          },
-          padding: {
-              '3xl': '10rem',
-          },
+        container: {
+          center: true,
       },
     },
   },

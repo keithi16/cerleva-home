@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 .container-3xl {
-    @apply px-10;
+    @apply w-full px-5 mx-auto xl:px-10;
 }
 
 img {
