@@ -29,7 +29,7 @@ module.exports = {
 
     content: [
       "./src/**/*.{js,css}", // Corrigido para 'js' em vez de 'zjs'
-      "index.html"
+      "./pages/*.html"
       // './*.php',
       // './template-parts/**/*.php',
       // './inc/*.php',

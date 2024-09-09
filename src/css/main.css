@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('carrosel.css');
+@import url('./components/carrosel.css');
 
 * { @apply font-montserrat; }
 
