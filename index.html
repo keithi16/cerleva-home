@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="./dist/main.css">
     </head>
     <body class="relative">
-        <header class="container absolute top-0 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
+        <header class="container absolute top-0 z-50 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
                 <p class="flex flex-col gap-1">
                     <span class="text-xl text-white font-extralight">para você</span>
                     <span class="text-base text-white font-extralight">sob medida</span>
@@ -36,11 +36,41 @@
 
         <main> 
             <!-- Hero -->
-            <section class="h-full overflow-hidden max-h-dvh">
-                <video class="w-full h-full" autoplay>
-                    <source src="./src/media/video/hero.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
+            <section class="relative w-full h-full max-h-dvh">
+                <div class="h-full overflow-hidden max-h-dvh">
+                    <video class="object-cover w-full h-full" autoplay>
+                        <source src="./src/media/video/hero.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+    
+                    <div class="absolute bottom-[calc(10%+190px)] left-1/2 -translate-x-1/2 bg-white px-1 py-1 flex font-light items-center">
+                            <span class="px-6">Explore nosso portfolio Cerleva</span>
+    
+                            <a href="https://www.ornare.com.br/produtos/"  target="_blank" class="bg-cblack py-[14px] px-9 flex items-center gap-2 text-white">
+                                <span>Veja todos os produtos</span>
+    
+                                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="min-w-2 min-h-1">
+                                    <path d="M7.379 0.105136L4.25582 3.17895C4.18767 3.24637 4.09569 3.28418 3.99983 3.28418C3.90397 3.28418 3.81199 3.24637 3.74384 3.17895L0.620656 0.105802C0.552089 0.0384222 0.459801 0.000666913 0.363668 0.000666904C0.267535 0.000666896 0.175247 0.0384221 0.10668 0.105802C0.0729159 0.138718 0.0460828 0.17806 0.0277608 0.221508C0.00943932 0.264957 3.22447e-07 0.311634 3.18325e-07 0.358787C3.14203e-07 0.405941 0.0094393 0.452617 0.0277608 0.496065C0.0460828 0.539514 0.0729159 0.578856 0.10668 0.611772L3.2292 3.68492C3.43487 3.88686 3.71159 4 3.99983 4C4.28807 4 4.56479 3.88686 4.77046 3.68492L7.89298 0.611772C7.92684 0.578846 7.95376 0.539463 7.97215 0.495953C7.99053 0.452443 8 0.405688 8 0.358454C8 0.31122 7.99053 0.264466 7.97215 0.220956C7.95376 0.177445 7.92684 0.138062 7.89298 0.105136C7.82441 0.037756 7.73212 6.91837e-07 7.63599 6.83433e-07C7.53986 6.75029e-07 7.44757 0.0377559 7.379 0.105136Z" fill="white"/>
+                                    </svg>   
+                            </a>                                             
+                    </div>
+    
+                    <div class="absolute bottom-0 left-0 flex justify-between w-1/2 pt-4 pb-20 bg-white ps-10 pe-5 text-cblack">
+                        <p>
+                            Um novo olhar sobre <br>
+                            a arquitetura. Inspirador, <br>
+                            aconchegante, moderno e único.
+                        </p>
+    
+                        <span class="pt-20 text-xs border-e border-cblack pe-2">
+                            06401-145
+                        </span>
+                    </div>
+                </div>
+
+                <span class="absolute top-[101%] left-1/2 text-cblack">
+                    <p>Atendimento diferenciado com profissionais altamente qualificados.</p>
+                </span>
             </section>
 
             <!-- Conheça a Serleva -->
@@ -58,7 +88,7 @@
                         
                         <p class="mt-5 text-lg">Além disso, contamos com uma loja bem estruturada, show room à disposição e profissionais capacitados para agregar valor à sua obra! Nossa equipe multidisciplinar é composta desde de design interiores à engenheiros, ou seja, temos o especialista certo para CADA ETAPA do seu projeto</p>
 
-                        <a href="#" class="block px-20 py-3 mt-5 border w-fit border-cblack">Saiba Mais</a>
+                        <a href="#" class="block px-20 py-3 mt-5 font-medium transition-colors duration-300 ease-linear border w-fit border-cblack hover:bg-black hover:text-white">Saiba Mais</a>
                 </div>
 
                 <div class="max-h-[368px] w-full overflow-hidden relative">
