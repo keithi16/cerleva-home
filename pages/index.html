@@ -17,21 +17,86 @@
         <link rel="stylesheet" href="../dist/main.css">
     </head>
     <body class="relative">
-        <header class="absolute top-0 z-50 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
-                <p class="flex-col hidden gap-1 md:flex">
-                    <span class="text-xl text-white font-extralight">para você</span>
-                    <span class="text-base text-white font-extralight">sob medida</span>
-                </p>
+        <header>
+                <div class="absolute top-0 z-50 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
+                    <p class="flex-col hidden gap-1 md:flex">
+                        <span class="text-base text-white font-extralight">sob medida</span>
+                        <span class="text-xl text-white font-extralight">para você</span>
+                    </p>
+    
+                    <img src="../src/media/img/logo-cerleva.svg" alt="" class="w-fit max-md:hidden">
+    
+                    <button id="openMenuButton" onclick="toggleMenu('menu')">
+                        <svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="39" y1="16.5" x2="-4.37114e-08" y2="16.5" stroke="white"/>
+                            <line x1="39" y1="8.5" x2="9" y2="8.5" stroke="white"/>
+                            <line x1="39" y1="0.5" x2="-4.37114e-08" y2="0.499997" stroke="white"/>
+                        </svg>
+                    </button>
+                </div>
 
-                <img src="../src/media/img/logo-cerleva.svg" alt="" class="w-fit max-md:hidden">
+                <div class="absolute top-0 z-50 hidden pt-12 pb-20 -translate-x-1/2 bg-white container-3xl left-1/2" id="menu">
+                    <div class="flex items-center justify-between">
+                        <p class="flex-col hidden gap-1 md:flex text-[#2C2C2C]">
+                            <span class="text-bas font-extralight">sob medida</span>
+                            <span class="text-xl font-extralight">para você</span>
+                        </p>
 
-                <button>
-                    <svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="39" y1="16.5" x2="-4.37114e-08" y2="16.5" stroke="white"/>
-                        <line x1="39" y1="8.5" x2="9" y2="8.5" stroke="white"/>
-                        <line x1="39" y1="0.5" x2="-4.37114e-08" y2="0.499997" stroke="white"/>
-                    </svg>
-                </button>
+                        <img src="../src/media/img/logo-black-cerleva.svg" alt="" class="w-fit max-md:hidden">
+        
+                        <button id="closeMenuButton" onclick="toggleMenu('menu')">
+                            <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="#2C2C2C"/>
+                                <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="#2C2C2C"/>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <div class="flex justify-between mt-16 uppercase">
+                            <div>
+                                <div>
+                                    <div class="flex items-center gap-1">
+                                        <span class="text-[#231F20] text-[22px]">Moveis Planejados</span>
+                                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.0685 0.157704L6.38372 4.76843C6.28151 4.86955 6.14353 4.92627 5.99974 4.92627C5.85596 4.92627 5.71798 4.86955 5.61576 4.76843L0.930983 0.158703C0.828132 0.0576334 0.689701 0.00100037 0.545501 0.00100036C0.401301 0.00100034 0.262869 0.0576333 0.160019 0.158703C0.109373 0.208077 0.0691228 0.267089 0.0416408 0.332262C0.0141578 0.397435 -4.70004e-07 0.467451 -4.76187e-07 0.538181C-4.8237e-07 0.608911 0.0141578 0.678925 0.0416407 0.744098C0.0691228 0.809271 0.109373 0.868283 0.160019 0.917657L4.8438 5.52738C5.1523 5.83029 5.56739 6 5.99974 6C6.4321 6 6.84718 5.83029 7.15569 5.52738L11.8395 0.917658C11.8903 0.868269 11.9306 0.809195 11.9582 0.743929C11.9858 0.678664 12 0.608532 12 0.537681C12 0.46683 11.9858 0.396699 11.9582 0.331434C11.9306 0.266168 11.8903 0.207093 11.8395 0.157704C11.7366 0.0566339 11.5982 9.18546e-07 11.454 9.0594e-07C11.3098 8.93334e-07 11.1714 0.0566339 11.0685 0.157704Z" fill="#2C2C2C"/>
+                                        </svg>
+                                    </div>
+                                
+                                    <ul class="text-[#2C2C2C] mt-4 border-l border-cblack pl-4 flex flex-col gap-1 opacity-0"> 
+                                        <li><a href="">Móveis Planejados em SP</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS EM BARUERI</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS EM ALPHAVILLE</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS EM SANTANA DE PARNAÍBA</a></li>
+                                        <li><a href="">LOJA DE MÓVEIS PLANEJADOS</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS PARA APARTAMENTO PEQUENO E GRANDE</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS PARA SALA DE ESTAR</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS PARA COZINHA</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS PARA QUARTO</a></li>
+                                        <li><a href="">MÓVEIS PLANEJADOS PARA QUARTO DE CASAL</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="flex flex-col gap-3 text-[22px] mt-6">
+                                    <a href="">Sobre</a>
+                                    <a href="">Projetos</a>
+                                    <a href="">Novidades</a>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <img src="../src/media/img/menu-img.svg" alt="" class="max-w-[650px] max-h-[486px]">
+
+                                <div class="absolute top-0 right-0 bg-white size-5"></div>
+
+                                <div class="bg-white text-cblack">
+                                    <a href="">
+                                        <span>Projeto Cozinha Luxe</span>
+                                        <span></span>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
         </header>
 
         <main> 
