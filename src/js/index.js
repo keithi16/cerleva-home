@@ -19,6 +19,17 @@ function closeMenuOnClickOutside(event) {
     }
 }
 
+function dropdown() {
+    const dropdownContainer = document.querySelector('.dropdownContainer');
+    const dropdownHead = document.querySelector('.dropdownHead');
+
+    dropdownHead.addEventListener("click", () => {
+        dropdownContainer.classList.toggle("open");
+    });
+}
+
+document.addEventListener("DOMContentLoaded", dropdown);
+
 
 
 const swiper = new Swiper('.swiper', {
