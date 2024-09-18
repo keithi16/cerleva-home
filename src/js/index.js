@@ -30,6 +30,8 @@ function dropdown() {
 
 document.addEventListener("DOMContentLoaded", dropdown);
 
+
+
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
@@ -41,9 +43,6 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
-
-
-  
 function calcDotsEffect(dots, activeDot, clickedDotIndex) {
     let calcDotsEffectBeingUsed = false;
 
