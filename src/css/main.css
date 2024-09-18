@@ -18,6 +18,19 @@ img {
     @apply w-full h-full object-cover
 }
 
+.dropdownContainer .dropdownHead svg,
+.dropdownContainer .dropdownBody {
+  @apply transition-all duration-300 ease-linear
+}
+
+.dropdownContainer.open .dropdownHead svg {
+  @apply rotate-180;
+}
+
+.dropdownContainer.open .dropdownBody {
+  @apply opacity-100;
+}
+
 
 .lds-roller,
 .lds-roller div,
