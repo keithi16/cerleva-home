@@ -126,3 +126,32 @@ img {
   }
 }
 
+  .swiperControls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    padding: 20px 0;
+
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    border: 1px solid white;
+    position: absolute;
+    transition: left .3s ease-in-out;
+    background: white;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: black !important;
+    scale: 1.2;
+  }

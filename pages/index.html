@@ -19,9 +19,9 @@
     <body class="relative">
         <header>
                 <div class="absolute top-0 z-50 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
-                    <p class="flex-col hidden gap-1 md:flex">
+                    <p class="flex-col hidden md:flex">
                         <span class="text-base text-white font-extralight">sob medida</span>
-                        <span class="text-xl text-white font-extralight">para você</span>
+                        <span class="block -mt-2 text-xl text-white font-extralight">para você</span>
                     </p>
     
                     <img src="../src/media/img/logo-cerleva.svg" alt="" class="w-fit max-md:hidden">
@@ -37,14 +37,14 @@
 
                 <div class="absolute top-0 z-50 hidden pt-12 pb-20 -translate-x-1/2 bg-white container-3xl left-1/2" id="menu">
                     <div class="flex items-center justify-between">
-                        <p class="flex-col hidden gap-1 md:flex text-[#2C2C2C]">
+                        <p class="flex-col hidden md:flex text-[#2C2C2C]">
                             <span class="text-bas font-extralight">sob medida</span>
-                            <span class="text-xl font-extralight">para você</span>
+                            <span class="block -mt-2 text-xl font-extralight">para você</span>
                         </p>
 
                         <img src="../src/media/img/logo-black-cerleva.svg" alt="" class="w-fit max-md:hidden">
         
-                        <button id="closeMenuButton" onclick="toggleMenu('menu')" class="max-md:ml-auto">
+                        <button id="closeMenuButton" onclick="toggleMenu('menu')" class="max-md:ml-auto w-[39px]">
                             <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="#2C2C2C"/>
                                 <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="#2C2C2C"/>
@@ -172,7 +172,7 @@
 
             <!-- Carrosel -->
             <section class="mt-16 lg:mt-40">
-                <div class="w-full mx-auto swiper xl:px-10">
+                <div class="w-full mx-auto swiper xl:px-10" id="TraderSlider" data-dots="#TraderDots">
                     <div class="max-w-full swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="../src/media/img/carrosel-1.svg" alt="" class="max-h-[608px] min-h-[355px]">
@@ -256,7 +256,9 @@
                       </div>
                     </div>
                     
-                    <div class="swiper-pagination"></div>
+                    <div class="realtive swiperControls" id="TraderDots">
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-effect !bottom-3 -translate-x-1/2 !left-1/2" data-dots-for="#TraderSlider"></div>
+                    </div>
                   
                     <div class="swiper-button-prev text-[#3A3A3A] bg-white top-[calc(100%-50px)] lg:top-[calc(100%-64px)] xl:top-[calc(100%-80px)] mt-0 size-[50px] lg:size-16 xl:size-20 left-0 after:text-[19px] after:lg:text-[27px] after:content-['prev']"></div>
                     <div class="swiper-button-next text-[#3A3A3A] bg-white top-[calc(100%-50px)] lg:top-[calc(100%-64px)] xl:top-[calc(100%-80px)] after:text-[19px] mt-0 size-[50px] lg:size-16 xl:size-20 right-0 after:lg:text-[27px] after:content-['next']"></div>
@@ -376,7 +378,7 @@
                                 </svg>
                             </div>
     
-                            <div class="flex flex-col text-white max-lg:ml-auto max-md:gap-5 max-md:items-end">
+                            <div class="flex flex-col text-white max-lg:ml-auto max-lg:gap-5 max-md:items-end">
                                 <p class="font-semibold text-[64px] lg:text-8xl">55</p>
                                 <span class="text-base lg:text-xl font-extralight">Anos de Cerleva</span>
                             </div>
@@ -516,15 +518,15 @@
                 <div class="flex flex-col justify-between gap-10 lg:pt-32 lg:gap-20">                
                     <div class="flex gap-10 max-lg:flex-col lg:gap-36">
                         <div>
-                            <h5 class="text-lg text-black">Venha nos Visitar</h5>
-                            <p>Av. Arnaldo Rodrigues Bitencourt, <br>
+                            <h5 class="mb-2 text-lg text-black uppercase">Venha nos Visitar</h5>
+                            <p class="text-[15px] font-light">Av. Arnaldo Rodrigues Bitencourt, <br>
                                 904  Bethaville, Barueri – São Paulo </p>
                         </div>
             
                         <div>
-                            <h5 class="text-lg text-black">Fale Conosco</h5>
-                            <p>E-mail:  comercial@cerleva.com.br</p>
-                            <p>WhatsApp: (11) 4210-2983</p>
+                            <h5 class="mb-2 text-lg text-black uppercase">Fale Conosco</h5>
+                            <p class="text-[15px] font-light">E-mail:  comercial@cerleva.com.br</p>
+                            <p class="text-[15px] font-light">WhatsApp: (11) 4210-2983</p>
                         </div>
                     </div>
 
@@ -539,7 +541,7 @@
                     </div>
 
                     <div>
-                        <img src="../src/media/img/footer-logo.svg" alt="" class="w-fit max-lg:mx-auto">
+                        <img src="../src/media/img/footer-logo.svg" alt="" class="w-fit max-lg:mx-auto max-md:w-[160px]">
                     </div>
                 </div>
 
