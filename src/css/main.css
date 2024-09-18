@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @import url('./components/carrosel.css');
+@import url('./components/loader.css');
+@import url('./components/dropdown.css');
+
 
 * { @apply font-montserrat; }
 
@@ -32,9 +35,37 @@ img {
 } 
 
 .dropdownContainer.open .dropdownBody {
-  @apply block md:opacity-100;
+  @apply md:!opacity-100 max-md:flex;
 }
 
+.swiperControls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.swiper-pagination {
+  padding: 20px 0;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 0;
+  border: 1px solid white;
+  position: absolute;
+  transition: left .3s ease-in-out;
+  background: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: black !important;
+  scale: 1.2;
+}
 
 .lds-roller,
 .lds-roller div,
@@ -125,33 +156,3 @@ img {
     transform: rotate(360deg);
   }
 }
-
-  .swiperControls {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .swiper-pagination {
-    padding: 20px 0;
-
-    top: unset;
-    right: unset;
-    bottom: unset;
-    left: unset;
-  }
-
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    border-radius: 0;
-    border: 1px solid white;
-    position: absolute;
-    transition: left .3s ease-in-out;
-    background: white;
-  }
-
-  .swiper-pagination-bullet-active {
-    background: black !important;
-    scale: 1.2;
-  }
