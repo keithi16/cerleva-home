@@ -19,14 +19,14 @@
     <body class="relative">
         <header>
                 <div class="absolute top-0 z-50 flex items-center justify-between mt-12 -translate-x-1/2 container-3xl left-1/2">
-                    <p class="flex-col hidden gap-1 md:flex">
+                    <p class="flex-col hidden md:flex">
                         <span class="text-base text-white font-extralight">sob medida</span>
-                        <span class="text-xl text-white font-extralight">para você</span>
+                        <span class="block -mt-2 text-xl text-white font-extralight">para você</span>
                     </p>
     
                     <img src="../src/media/img/logo-cerleva.svg" alt="" class="w-fit max-md:hidden">
     
-                    <button id="openMenuButton" onclick="toggleMenu('menu')">
+                    <button class="max-md:ml-auto" id="openMenuButton" onclick="toggleMenu('menu')">
                         <svg width="39" height="17" viewBox="0 0 39 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line x1="39" y1="16.5" x2="-4.37114e-08" y2="16.5" stroke="white"/>
                             <line x1="39" y1="8.5" x2="9" y2="8.5" stroke="white"/>
@@ -37,14 +37,14 @@
 
                 <div class="absolute top-0 z-50 hidden pt-12 pb-20 -translate-x-1/2 bg-white container-3xl left-1/2" id="menu">
                     <div class="flex items-center justify-between">
-                        <p class="flex-col hidden gap-1 md:flex text-[#2C2C2C]">
+                        <p class="flex-col hidden md:flex text-[#2C2C2C]">
                             <span class="text-bas font-extralight">sob medida</span>
-                            <span class="text-xl font-extralight">para você</span>
+                            <span class="block -mt-2 text-xl font-extralight">para você</span>
                         </p>
 
                         <img src="../src/media/img/logo-black-cerleva.svg" alt="" class="w-fit max-md:hidden">
         
-                        <button id="closeMenuButton" onclick="toggleMenu('menu')">
+                        <button id="closeMenuButton" onclick="toggleMenu('menu')" class="max-md:ml-auto w-[39px]">
                             <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line x1="0.353553" y1="0.646447" x2="20.3536" y2="20.6464" stroke="#2C2C2C"/>
                                 <line x1="20.3536" y1="1.35355" x2="0.353554" y2="21.3536" stroke="#2C2C2C"/>
@@ -62,7 +62,7 @@
                                         </svg>
                                     </div>
                                                                 
-                                    <ul class="text-[#2C2C2C] mt-4 border-l border-cblack pl-4 flex flex-col gap-1 opacity-0 dropdownBody"> 
+                                    <ul class="text-[#2C2C2C] mt-4 border-l border-cblack pl-4 flex flex-col gap-1 max-md:hidden md:opacity-0 dropdownBody"> 
                                         <li><a href="">Móveis Planejados em SP</a></li>
                                         <li><a href="">MÓVEIS PLANEJADOS EM BARUERI</a></li>
                                         <li><a href="">MÓVEIS PLANEJADOS EM ALPHAVILLE</a></li>
@@ -74,7 +74,8 @@
                                         <li><a href="">MÓVEIS PLANEJADOS PARA QUARTO</a></li>
                                         <li><a href="">MÓVEIS PLANEJADOS PARA QUARTO DE CASAL</a></li>
                                     </ul>
-                                </div>   
+                                </div>
+                                
 
                                 <div class="flex flex-col gap-3 text-[22px] mt-6">
                                     <a href="">Sobre</a>
@@ -83,15 +84,21 @@
                                 </div>
                             </div>
 
-                            <div class="relative">
+                            <div class="relative max-md:hidden">
                                 <img src="../src/media/img/menu-img.svg" alt="" class="max-w-[650px] max-h-[486px]">
 
                                 <div class="absolute top-0 right-0 bg-white size-5"></div>
 
-                                <div class="bg-white text-cblack">
-                                    <a href="">
+                                <div class="absolute left-0 px-4 py-5 mx-5 bg-white text-cblack bottom-5 w-[calc(100%-40px)]">
+                                    <a href="#" class="flex items-center justify-between">
                                         <span>Projeto Cozinha Luxe</span>
-                                        <span></span>
+                                        
+                                        <div>
+                                            <span>saiba mais</span>
+                                            <svg width="85" height="6" viewBox="0 0 85 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M84.2475 3.24748C84.3842 3.1108 84.3842 2.88919 84.2475 2.75251L82.0201 0.525119C81.8834 0.388436 81.6618 0.388436 81.5251 0.525119C81.3884 0.661803 81.3884 0.88341 81.5251 1.02009L83.505 2.99999L81.5251 4.97989C81.3884 5.11658 81.3884 5.33818 81.5251 5.47487C81.6618 5.61155 81.8834 5.61155 82.0201 5.47487L84.2475 3.24748ZM3.0598e-08 3.35L84 3.34999L84 2.64999L-3.0598e-08 2.65L3.0598e-08 3.35Z" fill="#2C2C2C"/>
+                                            </svg>   
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -101,9 +108,9 @@
 
         <main> 
             <!-- Hero -->
-            <section class="relative w-full h-svh lg:h-[123vh]">
-                <div class="overflow-hidden h-svh lg:h-[123vh]">
-                    <video class="object-cover w-full h-full" autoplay>
+            <section class="relative w-full h-dvh lg:h-[123vh]">
+                <div class="overflow-hidden h-dvh lg:h-[123vh]">
+                    <video class="object-cover w-full h-dvh lg:h-[123vh]" autoplay>
                         <source src="../src/media/video/hero.mp4" type="video/mp4">
                         Seu navegador não suporta vídeos HTML5.
                     </video>
@@ -121,8 +128,8 @@
                     </div>
                 </div>
 
-                <div class="absolute bottom-0 left-0 flex justify-between w-1/2 pt-4 bg-white lg:pb-20 ps-10 pe-5 text-cblack">
-                    <p>
+                <div class="absolute bottom-0 left-0 flex justify-between w-1/2 pt-4 bg-white lg:pb-20 ps-6 md:ps-10 pe-5 text-cblack">
+                    <p class="text-xs md:text-[15px] font-light">
                         Um novo olhar sobre <br>
                         a arquitetura. Inspirador, <br>
                         aconchegante, moderno e único.
@@ -146,14 +153,14 @@
                                 <rect x="0.5" y="0.5" width="11" height="11" stroke="#3A3A3A"/>
                             </svg>
                             
-                            <h3 class="uppercase text-[22px]">Conheça a Cerleva</h3>
+                            <h3 class="uppercase font-light text-xl md:text-[22px]">Conheça a Cerleva</h3>
                         </div>
 
-                        <p class="text-lg">Contamos com grandes parceiros que somam mais de 55 anos de experiência no mercado. Buscamos diariamente, oferecer ao nosso cliente e parceiro os melhores produtos pelo menor custo-benefício.</p>
+                        <p class="text-sm md:text-lg">Contamos com grandes parceiros que somam mais de 55 anos de experiência no mercado. Buscamos diariamente, oferecer ao nosso cliente e parceiro os melhores produtos pelo menor custo-benefício.</p>
                         
-                        <p class="mt-5 text-lg">Além disso, contamos com uma loja bem estruturada, show room à disposição e profissionais capacitados para agregar valor à sua obra! Nossa equipe multidisciplinar é composta desde de design interiores à engenheiros, ou seja, temos o especialista certo para CADA ETAPA do seu projeto</p>
+                        <p class="mt-5 text-sm md:text-lg">Além disso, contamos com uma loja bem estruturada, show room à disposição e profissionais capacitados para agregar valor à sua obra! Nossa equipe multidisciplinar é composta desde de design interiores à engenheiros, ou seja, temos o especialista certo para CADA ETAPA do seu projeto</p>
 
-                        <a href="#" class="block px-20 py-3 mt-5 font-medium transition-colors duration-300 ease-linear border w-fit border-cblack hover:bg-black hover:text-white">Saiba Mais</a>
+                        <a href="#" class="block w-full px-20 py-3 mt-5 text-center transition-colors duration-300 ease-linear border md:font-medium sm:w-fit border-cblack hover:bg-black hover:text-white">Saiba Mais</a>
                 </div>
 
                 <div class="relative w-full overflow-hidden">
@@ -164,14 +171,13 @@
             </section>
 
             <!-- Carrosel -->
-            <section class="mt-20 lg:mt-40 container-3xl">
-                <div class="swiper max-h-[608px]">
+            <section class="mt-16 lg:mt-40">
+                <div class="w-full mx-auto swiper xl:px-10" id="TraderSlider" data-dots="#TraderDots">
                     <div class="max-w-full swiper-wrapper">
                       <div class="swiper-slide">
-                        <img src="../src/media/img/carrosel-1.svg" alt="" class="max-h-[608px]">
+                        <img src="../src/media/img/carrosel-1.svg" alt="" class="max-h-[608px] min-h-[355px]">
 
-                            <!-- Detalhe do Material -->
-
+                        <!-- Detalhe do Material -->
                         <div class="absolute bottom-20 xl:right-40 max-lg:hidden right-28 bg-[#3A3A3A] p-3">
                             <img src="../src/media/img/wood.svg" alt="" class="max-xl:max-h-64 xl:size-[337px]">
 
@@ -190,7 +196,7 @@
                       </div>
 
                       <div class="swiper-slide">
-                        <img src="../src/media/img/carrossel2.svg" alt="" class="max-h-[608px]">
+                        <img src="../src/media/img/carrossel2.svg" alt="" class="max-h-[608px] min-h-[355px]">
 
                         <div class="absolute bottom-20 xl:right-40 max-lg:hidden right-28 bg-[#3A3A3A] p-3">
                             <img src="../src/media/img/marmore.svg" alt="" class="max-xl:max-h-64 xl:size-[337px]">
@@ -210,7 +216,7 @@
                       </div>
 
                       <div class="swiper-slide">
-                        <img src="../src/media/img/carrosel-1.svg" alt="" class="max-h-[608px]">
+                        <img src="../src/media/img/carrosel-1.svg" alt="" class="max-h-[608px] min-h-[355px]">
 
                         <div class="absolute bottom-20 xl:right-40 max-lg:hidden right-28 bg-[#3A3A3A] p-3">
                             <img src="../src/media/img/wood.svg" alt="" class="max-xl:max-h-64 xl:size-[337px]">
@@ -230,7 +236,7 @@
                       </div>
 
                       <div class="swiper-slide">
-                        <img src="../src/media/img/carrossel2.svg" alt="" class="max-h-[608px]">
+                        <img src="../src/media/img/carrossel2.svg" alt="" class="max-h-[608px] min-h-[355px]">
 
                         <div class="absolute bottom-20 xl:right-40 max-lg:hidden right-28 bg-[#3A3A3A] p-3">
                             <img src="../src/media/img/marmore.svg" alt="" class="max-xl:max-h-64 xl:size-[337px]">
@@ -250,24 +256,26 @@
                       </div>
                     </div>
                     
-                    <div class="swiper-pagination"></div>
+                    <div class="realtive swiperControls" id="TraderDots">
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-effect !bottom-3 -translate-x-1/2 !left-1/2" data-dots-for="#TraderSlider"></div>
+                    </div>
                   
                     <div class="swiper-button-prev text-[#3A3A3A] bg-white top-[calc(100%-50px)] lg:top-[calc(100%-64px)] xl:top-[calc(100%-80px)] mt-0 size-[50px] lg:size-16 xl:size-20 left-0 after:text-[19px] after:lg:text-[27px] after:content-['prev']"></div>
                     <div class="swiper-button-next text-[#3A3A3A] bg-white top-[calc(100%-50px)] lg:top-[calc(100%-64px)] xl:top-[calc(100%-80px)] after:text-[19px] mt-0 size-[50px] lg:size-16 xl:size-20 right-0 after:lg:text-[27px] after:content-['next']"></div>
                 </div>
 
-                <div class="flex justify-between mt-10 max-lg:flex-col text-cblack">
-                    <h3 class="uppercase  text-[22px] font-light max-w-[390px] lg:max-w-[201px]">Uma cozinha com elegância, conforto e modernidade de primeira linha.</h3>
+                <div class="flex justify-between w-full px-5 mx-auto mt-5 md:mt-10 max-lg:flex-col text-cblack xl:px-10">
+                    <h3 class="uppercase text-lg md:text-[22px] font-light max-w-[390px] lg:max-w-[201px]">Uma cozinha com elegância, conforto e modernidade de primeira linha.</h3>
                     
                     <div class="max-lg:mt-4 flex max-lg:flex-col gap-6 lg:gap-10 xl:gap-[154px] !leading-[0.5]">
-                        <p class="lg:max-w-[340px] font-light ">
-                            Fabricados com <span class="font-normal">equipamentos de última geração</span>, matérias-primas de excepcional qualidade e pelas mãos de profissionais altamente qualificados, os <span class="font-normal">
+                        <p class="lg:max-w-[340px] max-md:text-sm font-light">
+                            Fabricados com <span class="font-normal max-md:text-sm">equipamentos de última geração</span>, matérias-primas de excepcional qualidade e pelas mãos de profissionais altamente qualificados, os <span class="font-normal max-md:text-sm">
                                 móveis sob medida
                             </span> da Cerleva apresentam design de padrão internacional e excelente acabamento.
                         </p>
     
-                        <p class="lg:max-w-[340px] font-light">
-                            Desenvolvido com foco em inovação, o design do escritório da <span class="font-normal">Cerleva combina estética contemporânea com funcionalidade</span>, fruto de um trabalho meticuloso de <span class="font-normal">
+                        <p class="lg:max-w-[340px] font-light  max-md:text-sm">
+                            Desenvolvido com foco em inovação, o design do escritório da <span class="font-normal max-md:text-sm">Cerleva combina estética contemporânea com funcionalidade</span>, fruto de um trabalho meticuloso de <span class="font-normal max-md:text-sm">
                                 designers e criadores altamente qualificados
                             </span>.
                         </p>
@@ -298,7 +306,7 @@
                                     <circle cx="24" cy="24" r="7.5" stroke="#231F20"/>
                                 </svg>    
                                 
-                                <span class="text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:left-0 max-lg:bottom-0 max-lg:p-6 max-lg:bg-white">Sala de Estar</span>
+                                <span class="text-base md:text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:left-0 max-lg:bottom-0 max-lg:py-4 max-lg:ps-2 max-lg:pe-12 max-lg:bg-white">Sala de Estar</span>
                             </div>
 
                             <!-- Imagem do Hover da Grid -->
@@ -312,7 +320,7 @@
                                     <path d="M15.3397 30L24 15L32.6603 30H15.3397Z" stroke="#231F20"/>
                                 </svg>
                                 
-                                <span class="text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:left-0 max-lg:bottom-0 max-lg:p-6 max-lg:bg-white">Cozinha</span>
+                                <span class="text-base md:text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:right-0 max-lg:bottom-0 max-lg:py-4 max-lg:ps-12 max-lg:pe-2 max-lg:bg-white ">Cozinha</span>
                             </div>
                                 
 
@@ -326,7 +334,7 @@
                                     <path d="M15.3397 30L24 15L32.6603 30H15.3397Z" stroke="#231F20"/>
                                 </svg>
                                 
-                                <span class="text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:left-0 max-lg:bottom-0 max-lg:p-6 max-lg:bg-white">Produto 3</span>
+                                <span class="text-base md:text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:left-0 max-lg:bottom-0 max-lg:py-4 max-lg:ps-2 max-lg:pe-12 max-lg:bg-white">Produto 3</span>
                             </div>
 
                             <img src="../src/media/img/project3.svg" alt="" class="inset-0 transition-opacity duration-300 ease-linear lg:absolute lg:opacity-0 lg:hover:opacity-100">
@@ -339,7 +347,7 @@
                                     <path d="M15.3397 30L24 15L32.6603 30H15.3397Z" stroke="#231F20"/>
                                 </svg>
                                 
-                                <span class="text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:left-0 max-lg:bottom-0 max-lg:p-6 max-lg:bg-white">Produto 4</span>
+                                <span class="text-base md:text-[22px] lg:block font-light text-cblack uppercase max-lg:absolute max-lg:right-0 max-lg:bottom-0 max-lg:py-4 max-lg:ps-12 max-lg:pe-2 max-lg:bg-white">Produto 4</span>
                             </div>
 
                             <img src="../src/media/img/project4.svg" alt="" class="inset-0 transition-opacity duration-300 ease-linear lg:absolute lg:opacity-0 lg:hover:opacity-100">
@@ -347,9 +355,9 @@
                     </div>
                 </div>
 
-                <div class="relative h-full overflow-hidden max-h-dvh">
+                <div class="relative min-h-[657px] h-dvh max-h-dvh max-lg:mt-20">
                     <!-- Video -->
-                    <video class="w-full h-full" autoplay>
+                    <video class="object-cover w-full h-dvh" autoplay>
                         <source src="../src/media/video/project.mp4" type="video/mp4">
                         Seu navegador não suporta vídeos HTML5.
                     </video>
@@ -370,21 +378,21 @@
                                 </svg>
                             </div>
     
-                            <div class="flex flex-col text-white max-lg:ml-auto">
-                                <p class="font-semibold text-8xl">55</p>
-                                <span class="text-xl font-extralight">Anos de Cerleva</span>
+                            <div class="flex flex-col text-white max-lg:ml-auto max-lg:gap-5 max-md:items-end">
+                                <p class="font-semibold text-[64px] lg:text-8xl">55</p>
+                                <span class="text-base lg:text-xl font-extralight">Anos de Cerleva</span>
                             </div>
                         </div>
 
                         <!-- 140 projeto + QR Code -->
                         <div class="flex justify-between"> 
-                            <span>
+                            <span class="max-lg:hidden">
                                 <img src=".././src/media/img/qrcode.svg" alt="">
                             </span>
 
-                            <div class="flex flex-col text-white">
-                                <span class="block text-xl font-extralight ms-auto">Um novo olhar sobre a arquitetura.</span>
-                                <p class="font-semibold text-8xl">+140 projetos</p>
+                            <div class="flex flex-col text-white max-lg:ml-auto">
+                                <span class="block lg:text-xl font-extralight ms-auto">Um novo olhar sobre a arquitetura.</span>
+                                <p class="text-4xl font-semibold uppercase lg:text-8xl">+140 projetos</p>
                             </div>
                         </div>
                     </div>
@@ -392,7 +400,7 @@
              </section>
 
              <!-- Últimas Notícias -->
-              <section class="mt-12 lg:mt-20 container-3xl">
+              <section class="mt-12 lg:mt-20 container-3xl max-md:hidden">
                 <h4 class="text-center uppercase text-cblack ">Últimas Notícias</h4>
 
                 <div class="grid grid-cols-3 grid-rows-2 mt-8 gap-x-5 gap-y-8">
@@ -510,15 +518,15 @@
                 <div class="flex flex-col justify-between gap-10 lg:pt-32 lg:gap-20">                
                     <div class="flex gap-10 max-lg:flex-col lg:gap-36">
                         <div>
-                            <h5 class="text-lg text-black">Venha nos Visitar</h5>
-                            <p>Av. Arnaldo Rodrigues Bitencourt, <br>
+                            <h5 class="mb-2 text-lg text-black uppercase">Venha nos Visitar</h5>
+                            <p class="text-[15px] font-light">Av. Arnaldo Rodrigues Bitencourt, <br>
                                 904  Bethaville, Barueri – São Paulo </p>
                         </div>
             
                         <div>
-                            <h5 class="text-lg text-black">Fale Conosco</h5>
-                            <p>E-mail:  comercial@cerleva.com.br</p>
-                            <p>WhatsApp: (11) 4210-2983</p>
+                            <h5 class="mb-2 text-lg text-black uppercase">Fale Conosco</h5>
+                            <p class="text-[15px] font-light">E-mail:  comercial@cerleva.com.br</p>
+                            <p class="text-[15px] font-light">WhatsApp: (11) 4210-2983</p>
                         </div>
                     </div>
 
@@ -533,7 +541,7 @@
                     </div>
 
                     <div>
-                        <img src="../src/media/img/footer-logo.svg" alt="" class="w-fit max-lg:mx-auto">
+                        <img src="../src/media/img/footer-logo.svg" alt="" class="w-fit max-lg:mx-auto max-md:w-[160px]">
                     </div>
                 </div>
 

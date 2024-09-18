@@ -15,20 +15,24 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 img {
-    @apply w-full h-full object-cover
+    @apply object-cover w-full h-full;
 }
 
 .dropdownContainer .dropdownHead svg,
 .dropdownContainer .dropdownBody {
-  @apply transition-all duration-300 ease-linear
+  @apply transition-all duration-300 ease-linear;
 }
 
 .dropdownContainer.open .dropdownHead svg {
   @apply rotate-180;
 }
 
+.dropdownContainer .dropdownBody {
+  @apply cursor-pointer;
+} 
+
 .dropdownContainer.open .dropdownBody {
-  @apply opacity-100;
+  @apply block md:opacity-100;
 }
 
 
@@ -122,3 +126,32 @@ img {
   }
 }
 
+  .swiperControls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    padding: 20px 0;
+
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    border: 1px solid white;
+    position: absolute;
+    transition: left .3s ease-in-out;
+    background: white;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: black !important;
+    scale: 1.2;
+  }
