@@ -20,7 +20,11 @@ img {
 
 .dropdownContainer .dropdownHead svg,
 .dropdownContainer .dropdownBody {
+<<<<<<< HEAD
   @apply transition-all duration-300 ease-linear;
+=======
+  @apply transition-all duration-300 ease-linear
+>>>>>>> upstream/main
 }
 
 .dropdownContainer.open .dropdownHead svg {
@@ -31,7 +35,10 @@ img {
   @apply opacity-100;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/main
 
 .lds-roller,
 .lds-roller div,

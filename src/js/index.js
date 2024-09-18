@@ -30,6 +30,10 @@ function dropdown() {
 
 document.addEventListener("DOMContentLoaded", dropdown);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/main
 
 
 const swiper = new Swiper('.swiper', {
