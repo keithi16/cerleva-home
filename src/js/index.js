@@ -39,25 +39,20 @@ new InfiniteMarquee({
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        loop: true,
-        simulateTouch: true,
-        grabCursor: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        on: {
-            slideChange: function () {
-                this.pagination.update(); // Usar "this" para acessar a instância corretamente
-            },
-        },
-    });
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: false,
+    allowTouchMove: false,
+    grabCursor: false,
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
