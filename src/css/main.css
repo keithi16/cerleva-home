@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'node_modules/vanilla-infinite-marquee/infinite-marquee.css';
 @import url('./components/carrosel.css');
 @import url('./components/loader.css');
 @import url('./components/dropdown.css');
@@ -30,26 +31,34 @@ img {
   @apply rotate-180;
 }
 
-.dropdownContainer .dropdownBody {
+
+
+.dropdownContainer .dropdownBody,
+.dropdownContainer .dropdownHead {
   @apply cursor-pointer;
-} 
+}
 
 .dropdownContainer.open .dropdownBody {
   @apply md:!opacity-100 max-md:flex;
 }
 
-.swiperControls {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
 }
 
-.swiper-pagination {
-  padding: 20px 0;
-  top: unset;
-  right: unset;
-  bottom: unset;
-  left: unset;
+.marquee-post {
+  @apply w-[90vw] md:w-[536px] max-md:h-[257px]
+}
+
+.horizontal-marquee,
+.horizontal-marquee-inner {
+  @apply !gap-5 md:!gap-[30px];
 }
 
 .swiper-pagination-bullet {
@@ -57,7 +66,6 @@ img {
   height: 10px;
   border-radius: 0;
   border: 1px solid white;
-  position: absolute;
   transition: left .3s ease-in-out;
   background: white;
 }
@@ -65,7 +73,8 @@ img {
 .swiper-pagination-bullet-active {
   background: black !important;
   scale: 1.2;
-}
+} 
+
 
 .lds-roller,
 .lds-roller div,
